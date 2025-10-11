@@ -10,4 +10,10 @@ export const asset = {
     blackLogoIcon : require('./icons/blackLogoIcon.png'),
     lineIcon : require('./icons/lineIcon.png'),
     verificationBgImage : require('./icons/verificationBgImage.png'),
+    lifeStyleSerumImage : require('./icons/GetStarted/Lifestyle_Serum2_HERO.png'),
+    moisturizerSplashImage : require('./icons/GetStarted/MoisturizerSplash_HERO.png'),
+    lifestyleBoxesImage : require('./icons/GetStarted/Lifestyle_Boxes.png'),
+    lifeStyleCleanserImage : require('./icons/GetStarted/Lifestyle_Cleanser.png'),
+    getStartedArrow : require('./icons/GetStarted/GetStartedArrow.png'),
+    getStartedArrowBG : require('./icons/GetStarted/GetStartedArrowBG.png'),
 }

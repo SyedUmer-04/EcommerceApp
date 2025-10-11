@@ -1,7 +1,7 @@
 export const colors = {
     Primary : '#943e25',
-    LoginText: '#9A4A32',
-    loginBg : '#F7F2EE',
+    text: '#9A4A32',
+    Bg : '#F7F2EE',
     white : '#ffffff',
     shadow : '#000000',
     button: '#e8cda6',

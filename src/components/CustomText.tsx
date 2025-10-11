@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TextStyle } from "react-native";
 import { colors } from "../utils/theme";
-import { vh } from "../measurements";
+import { vh } from "../utils/measurements";
 import { FC } from "react";
 
 interface TexTI {

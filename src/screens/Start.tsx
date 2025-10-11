@@ -1,7 +1,7 @@
 import { Image, StyleSheet, View } from 'react-native';
 import { colors } from '../utils/theme';
-import { asset } from '../assets/assets';
-import { vh, vw } from '../measurements';
+import { asset } from '../assets/asset';
+import { vh, vw } from '../utils/measurements';
 import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
@@ -9,7 +9,7 @@ function Start() {
   const navigation = useNavigation();
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('Login'); // or 'navigate' instead of 'replace'
+      navigation.replace('GetStarted'); // or 'navigate' instead of 'replace'
     }, 2000); // 2 seconds
 
     return () => clearTimeout(timer); // Cleanup

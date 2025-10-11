@@ -1,5 +1,5 @@
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { vw } from '../measurements';
+import { vw } from '../utils/measurements';
 import { colors } from '../utils/theme';
 import CustomText from './CustomText';
 

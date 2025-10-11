@@ -1,7 +1,7 @@
 import { Image, StyleSheet, View, ImageBackground, Alert } from 'react-native';
 import { Formik } from 'formik';
-import { asset } from '../assets/assets';
-import { vh, vw } from '../measurements';
+import { asset } from '../assets/asset';
+import { vh, vw } from '../utils/measurements';
 import { colors } from '../utils/theme';
 import CustomText from '../components/CustomText';
 import CustomTextInput from '../components/CustomTextInput';

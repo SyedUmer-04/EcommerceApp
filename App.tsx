@@ -14,6 +14,7 @@ import SignUp from './src/screens/SignUp';
 import PasswordRecovery from './src/screens/PasswordRecovery';
 import Verification from './src/screens/Verification';
 import NewPassword from './src/screens/NewPassword';
+import GetStarted from './src/screens/GetStarted';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,6 +31,7 @@ function App() {
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Start" component={Start} />
+          <Stack.Screen name="GetStarted" component={GetStarted} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="SignUp" component={SignUp} />
           <Stack.Screen name="PasswordRecovery" component={PasswordRecovery} />
@@ -38,6 +40,7 @@ function App() {
         </Stack.Navigator>
       </View>
     </NavigationContainer>
+    // <Home/>
   );
 }
 

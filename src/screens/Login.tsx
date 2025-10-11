@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Formik } from 'formik';
-import { asset } from '../assets/assets';
-import { vh, vw } from '../measurements';
+import { asset } from '../assets/asset';
+import { vh, vw } from '../utils/measurements';
 import { colors } from '../utils/theme';
 import CustomText from '../components/CustomText';
 import CustomTextInput from '../components/CustomTextInput';
@@ -68,7 +68,7 @@ function Login() {
                     label={'Email Address'}
                     leftImageSource={asset.profileIcon}
                     placeholder={'Enter your email'}
-                    placeholderColor={colors.LoginText}
+                    placeholderColor={colors.text}
                     key={'email'}
                     onChangeText={handleChange('email')}
                     value={values.email}
@@ -86,7 +86,7 @@ function Login() {
                   <CustomTextInput
                     label={'Password'}
                     placeholder={'Enter your password'}
-                    placeholderColor={colors.LoginText}
+                    placeholderColor={colors.text}
                     leftImageSource={asset.lockIcon}
                     rightImageSource={asset.eyeIcon}
                     key={'password'}
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.loginBg,
+    backgroundColor: colors.Bg,
   },
 
   logoIcon: {
@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
 
   desc: {
     flex: 1,
-    backgroundColor: colors.loginBg,
+    backgroundColor: colors.Bg,
     borderRadius: vw * 10,
     marginTop: '40%',
     width: '100%',

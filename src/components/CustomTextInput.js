@@ -8,10 +8,10 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { colors } from '../utils/theme';
-import { vh, vw } from '../measurements';
+import { vh, vw } from '../utils/measurements';
 import CustomText from './CustomText';
 import { maxWorkers } from '../../metro.config';
-import { asset } from '../assets/assets';
+import { asset } from '../assets/asset';
 import { useState } from 'react';
 
 interface textInputI {
