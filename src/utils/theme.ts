@@ -4,7 +4,7 @@ export const colors = {
     Bg : '#F7F2EE',
     white : '#ffffff',
     shadow : '#000000',
-    button: '#e8cda6',
+    button: '#E8CDA6',
     darkText: '#2D1A13',
     red: '#f88070',
     

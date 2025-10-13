@@ -16,4 +16,8 @@ export const asset = {
     lifeStyleCleanserImage : require('./icons/GetStarted/Lifestyle_Cleanser.png'),
     getStartedArrow : require('./icons/GetStarted/GetStartedArrow.png'),
     getStartedArrowBG : require('./icons/GetStarted/GetStartedArrowBG.png'),
+    navicon : require('./icons/Home/navicon.png'),
+    homeSearch : require('./icons/Home/search.png'),
+    homefilter : require('./icons/Home/filter.png'),
+    homeBag : require('./icons/Home/bag.png'),
 }

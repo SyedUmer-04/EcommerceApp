@@ -37,20 +37,6 @@ const CustomTextInput = props => {
     inputStyle,
   } = props;
   return (
-    <View style={styles.container}>
-      <View style={{ flexDirection: 'row' }}>
-        <CustomText textStyles={{ fontSize: vh * 2, marginVertical: vh }}>
-          {label}
-        </CustomText>
-        {isrequired &&
-          (props.error ? (
-            <CustomText textStyles={{ fontSize: vh * 3, color: colors.red }}>
-              *
-            </CustomText>
-          ) : (
-            <CustomText textStyles={{ fontSize: vh * 3 }}>*</CustomText>
-          ))}
-      </View>
       <View style={styles.inputContainer}>
         {leftImageSource && (
           <Image style={styles.image} source={leftImageSource} />
@@ -69,17 +55,13 @@ const CustomTextInput = props => {
           </TouchableOpacity>
         )}
       </View>
-    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    marginVertical: '2%',
-    width: '100%',
-  },
 
   inputContainer: {
+    height: vh * 6,
     flexDirection: 'row',
     backgroundColor: colors.white,
     alignItems: 'center',
@@ -88,16 +70,19 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 2,
+    marginTop: vh * 2,
   },
 
   input: {
     flex: 1,
     backgroundColor: colors.white,
-    color: colors.LoginText,
+    color: colors.text,
+    fontSize: vw * 3.5,
   },
 
   image: {
-    margin: vh,
+    marginVertical: vh,
+    marginHorizontal: vh * 1.5,
     height: vh * 2.5,
     width: vw * 5,
     resizeMode: 'contain',

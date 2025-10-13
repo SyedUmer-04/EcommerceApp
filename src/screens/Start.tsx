@@ -9,7 +9,7 @@ function Start() {
   const navigation = useNavigation();
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('GetStarted'); // or 'navigate' instead of 'replace'
+      navigation.navigate('SignIn'); // or 'navigate'  to GetStarted
     }, 2000); // 2 seconds
 
     return () => clearTimeout(timer); // Cleanup
