@@ -3,13 +3,12 @@ import { colors } from '../utils/theme';
 import { asset } from '../assets/asset';
 import { vh, vw } from '../utils/measurements';
 import React, { useEffect } from 'react';
-import { useNavigation } from '@react-navigation/native';
 
-function Start() {
-  const navigation = useNavigation();
+function Start({navigation}: any) {
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate('SignIn'); // or 'navigate'  to GetStarted
+      navigation.navigate('GetStarted'); // or 'navigate'  to GetStarted
     }, 2000); // 2 seconds
 
     return () => clearTimeout(timer); // Cleanup

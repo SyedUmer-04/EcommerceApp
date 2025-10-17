@@ -22,7 +22,7 @@ const  CustomText: FC<TexTI> = ({ children, textStyles})=> {
 
 const styles = StyleSheet.create({
     text: {
-        color: colors.LoginText,
+        color: colors.text,
         fontSize: vh * 1.5,
         margin: 0,
         padding: 0,

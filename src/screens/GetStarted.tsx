@@ -10,7 +10,7 @@ import { asset } from '../assets/asset';
 import { vh, vw } from '../utils/measurements';
 import { colors } from '../utils/theme';
 
-function GetStarted(navigation) {
+function GetStarted({navigation}: any) {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -42,7 +42,7 @@ function GetStarted(navigation) {
           </Text>
         </View>
 
-        <TouchableOpacity style={styles.getStartedView} onPress={navigation.navigate('Home')}>}
+        <TouchableOpacity style={styles.getStartedView} onPress={() => navigation.navigate('Home')}>
           <View style={styles.getStartedTextArrow}>
             <Text style={styles.getStartedText}>Get Started</Text>
             <Image

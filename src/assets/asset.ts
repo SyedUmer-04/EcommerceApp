@@ -20,4 +20,7 @@ export const asset = {
     homeSearch : require('./icons/Home/search.png'),
     homefilter : require('./icons/Home/filter.png'),
     homeBag : require('./icons/Home/bag.png'),
+    loginAlert : require('./icons/AlertBox/LoginAlertQuestionMark.png'),
+    close : require('./icons/AlertBox/closeOrCross.png'),
+    sliderImage1 : require('./icons/Home/SliderImage1.png'),
 }

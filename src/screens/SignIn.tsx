@@ -65,6 +65,7 @@ function SignIn({ navigation }: any) {
                 placeholder={'Enter your email'}
                 placeholderColor={colors.text}
                 key={'email'}
+                isrequired={true}
                 onChangeText={handleChange('email')}
                 value={values.email}
                 error={errors.email}
@@ -85,6 +86,7 @@ function SignIn({ navigation }: any) {
                 leftImageSource={asset.lockIcon}
                 rightImageSource={asset.eyeIcon}
                 key={'password'}
+                isrequired={true}
                 secureText={true}
                 onChangeText={handleChange('password')}
                 value={values.password}
@@ -127,7 +129,7 @@ function SignIn({ navigation }: any) {
           </View>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate('PasswordRecovery')}
+            onPress={() => navigation.navigate('ForgotPasswordStep1')}
           >
             <CustomText textStyles={{ color: colors.text }}>
               Forgot password?
@@ -208,7 +210,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 1000,
     alignSelf: 'center',
-    backgroundColor: 'red',
   },
 
   formContainer: {
